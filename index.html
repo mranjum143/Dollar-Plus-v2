@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollar Plus - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #1a0c2e; font-family: sans-serif; color: white; }
+        .dp-card { background-color: #2d1b4a; border: 1px solid rgba(255, 215, 0, 0.1); }
+        .text-yellow { color: #ffd700; }
+        .bg-yellow { background-color: #ffd700; }
+    </style>
+</head>
+<body class="pb-24">
+
+    <div class="p-6 dp-card rounded-b-[30px] flex justify-between items-center shadow-lg">
+        <div>
+            <h1 class="text-2xl font-black text-yellow">Dollar Plus</h1>
+            <p class="text-[10px] tracking-widest text-yellow/70">DASHBOARD</p>
+        </div>
+        <div class="w-12 h-12 bg-yellow rounded-full flex items-center justify-center text-black font-bold text-xl">U</div>
+    </div>
+
+    <div class="p-4">
+        <div class="p-6 dp-card rounded-[30px] shadow-xl">
+            <p class="text-xs text-gray-400">TOTAL BALANCE</p>
+            <h2 class="text-4xl font-bold mt-1">$0.00 <span class="text-lg text-gray-500">/ Rs. 0</span></h2>
+            <div class="flex gap-8 mt-6 border-t border-white/5 pt-4">
+                <div>
+                    <p class="text-[10px] text-gray-400">DAILY</p>
+                    <p class="text-green-400 font-bold">+$0.00</p>
+                </div>
+                <div>
+                    <p class="text-[10px] text-gray-400">TOTAL EARNED</p>
+                    <p class="text-green-400 font-bold">+$0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-2 px-4 mt-4 text-center">
+        <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-yellow rounded-2xl flex items-center justify-center mb-1 shadow-lg">
+                <i class="fa-solid fa-wallet text-black text-xl"></i>
+            </div>
+            <span class="text-[10px]">Deposit</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-green-500 rounded-2xl flex items-center justify-center mb-1 shadow-lg">
+                <i class="fa-solid fa-arrow-up-from-bracket text-black text-xl"></i>
+            </div>
+            <span class="text-[10px]">Withdraw</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-purple-400 rounded-2xl flex items-center justify-center mb-1 shadow-lg">
+                <i class="fa-solid fa-gift text-black text-xl"></i>
+            </div>
+            <span class="text-[10px]">Promo</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-1 shadow-lg">
+                <i class="fa-solid fa-comments text-black text-xl"></i>
+            </div>
+            <span class="text-[10px]">Admin</span>
+        </div>
+    </div>
+
+    <div class="px-4 mt-8">
+        <div class="dp-card p-4 rounded-2xl flex items-center gap-4 relative">
+            <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center">
+                <i class="fa-solid fa-swords text-white text-xl"></i>
+            </div>
+            <div>
+                <p class="font-bold">⚔️ Team Battle Arena</p>
+                <p class="text-[10px] text-gray-400">Weekly tournament — win up to $100!</p>
+            </div>
+            <span class="absolute top-2 right-4 text-[8px] bg-red-500 px-2 py-0.5 rounded-full font-bold">LIVE</span>
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 left-0 right-0 dp-card p-4 flex justify-around rounded-t-3xl border-t border-white/10">
+        <div class="flex flex-col items-center text-yellow"><i class="fa-solid fa-table-cells-large"></i><span class="text-[10px]">HOME</span></div>
+        <div class="flex flex-col items-center text-gray-500"><i class="fa-solid fa-chart-line"></i><span class="text-[10px]">INVEST</span></div>
+        <div class="flex flex-col items-center text-gray-500"><i class="fa-solid fa-money-bill-wave"></i><span class="text-[10px]">EARN</span></div>
+        <div class="flex flex-col items-center text-gray-500"><i class="fa-solid fa-user"></i><span class="text-[10px]">PROFILE</span></div>
+    </div>
+
+</body>
+      </html>
