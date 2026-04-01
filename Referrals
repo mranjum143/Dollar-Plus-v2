@@ -1,0 +1,40 @@
+const InviteScreen = () => {
+  return (
+    <div className="p-4 bg-dp-dark min-h-screen">
+       <div className="bg-dp-card rounded-[40px] p-8 text-center border border-dp-yellow/10">
+          <span className="text-5xl mb-4 block">🔗</span>
+          <h2 className="text-2xl font-bold mb-2">Invite & Earn</h2>
+          <p className="text-gray-400 text-xs mb-8">Share your link and earn commissions on every investment</p>
+          
+          <div className="bg-black/30 p-4 rounded-2xl mb-6 border border-white/5">
+             <p className="text-xs text-gray-500 truncate">https://dollarplus.com/signup?ref=AN-7264</p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-3">
+             <button className="bg-dp-yellow text-black p-4 rounded-2xl font-bold flex flex-col items-center gap-1 shadow-lg">
+                <span>📋</span> <span className="text-[10px]">Copy</span>
+             </button>
+             <button className="bg-white/10 p-4 rounded-2xl font-bold flex flex-col items-center gap-1 border border-white/10">
+                <span>📤</span> <span className="text-[10px]">Share</span>
+             </button>
+             <button className="bg-[#25D366] text-white p-4 rounded-2xl font-bold flex flex-col items-center gap-1 shadow-lg shadow-green-500/20">
+                <span>💬</span> <span className="text-[10px]">WhatsApp</span>
+             </button>
+          </div>
+       </div>
+
+       <div className="mt-8">
+          <p className="text-xs font-bold text-gray-500 mb-4 px-2">PREVIEW MESSAGE</p>
+          <div className="bg-[#243447] p-6 rounded-[30px] border border-white/5">
+             <p className="text-sm">🌟 <b>Join Dollar Plus — Lifetime Earning Platform!</b></p>
+             <ul className="text-xs text-gray-300 mt-4 space-y-2">
+                <li>✅ Minimum Deposit: $3 (Rs. 840)</li>
+                <li>💰 Minimum Withdrawal: $0.15</li>
+                <li>🚀 Fast Withdrawals within 12 hours</li>
+                <li>🛡️ 100% Secure & Trusted</li>
+             </ul>
+          </div>
+       </div>
+    </div>
+  );
+};
