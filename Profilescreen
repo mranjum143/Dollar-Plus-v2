@@ -1,0 +1,59 @@
+const ProfileScreen = () => {
+  const menuItems = [
+    { label: 'My Team', icon: '👥' },
+    { label: 'Ranks & Rewards', icon: '🏅' },
+    { label: 'Deposit History', icon: '📜' },
+    { label: 'Transactions', icon: '📈' },
+    { label: 'Edit Profile', icon: '📝' },
+    { label: 'Change Password', icon: '🔒' },
+    { label: 'Support', icon: '🎧' },
+  ];
+
+  return (
+    <div className="bg-dp-dark min-h-screen p-4 pb-24">
+      {/* User Info Card */}
+      <div className="bg-dp-card rounded-[40px] p-8 mb-8 border border-dp-yellow/10">
+        <div className="flex flex-col items-center mb-6">
+          <div className="w-24 h-24 bg-dp-yellow rounded-3xl flex items-center justify-center shadow-2xl mb-4">
+             <span className="text-4xl">👑</span>
+          </div>
+          <h2 className="text-2xl font-black italic">Ahmad Nafees Anjum</h2>
+          <p className="text-gray-400 text-sm">ahmadnafees@email.com</p>
+          <div className="mt-2 bg-white/5 px-4 py-1 rounded-full border border-dp-yellow/20 flex items-center gap-2">
+            <span className="text-dp-yellow text-xs"># YX-CF84BF</span>
+            <span className="text-[10px] text-gray-500">📋</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-3 gap-2">
+          <div className="text-center">
+            <p className="text-dp-yellow font-bold">$0.00</p>
+            <p className="text-[10px] text-gray-500">INVESTED</p>
+          </div>
+          <div className="text-center border-x border-white/5">
+            <p className="text-dp-green font-bold">$0.00</p>
+            <p className="text-[10px] text-gray-500">EARNED</p>
+          </div>
+          <div className="text-center">
+            <p className="font-bold">0</p>
+            <p className="text-[10px] text-gray-500">TEAM</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Account Menu */}
+      <p className="text-xs font-bold text-gray-500 mb-4 px-2 tracking-widest">ACCOUNT</p>
+      <div className="bg-dp-card rounded-[30px] overflow-hidden border border-white/5">
+        {menuItems.map((item, i) => (
+          <div key={i} className="flex items-center justify-between p-5 border-b border-white/5 active:bg-white/5">
+            <div className="flex items-center gap-4">
+              <span className="bg-white/5 w-10 h-10 rounded-xl flex items-center justify-center text-lg">{item.icon}</span>
+              <span className="font-medium">{item.label}</span>
+            </div>
+            <span className="text-gray-600">❯</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
